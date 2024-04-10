@@ -19,4 +19,3 @@ func _input(event):
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP and event.pressed:
 			emit_signal("spinRight")
 
-#check notes for stuff to add here

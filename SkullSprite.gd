@@ -7,4 +7,3 @@ func _process(_delta):
 		flip_v = true
 	else:
 		flip_v = false
-

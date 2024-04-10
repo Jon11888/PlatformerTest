@@ -1,10 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://6r1tpkkxp3t6"]
+[gd_scene load_steps=46 format=3 uid="uid://6r1tpkkxp3t6"]
 
 [ext_resource type="Script" path="res://JamScene.gd" id="1_c2q1h"]
 [ext_resource type="Texture2D" uid="uid://ccivbqt02qwdq" path="res://TileMap2.png" id="1_t5d4b"]
 [ext_resource type="Script" path="res://OrangeOrb.gd" id="4_y2ha1"]
 [ext_resource type="Texture2D" uid="uid://cib5g5fdo88ld" path="res://Smile.png" id="5_bkj42"]
-[ext_resource type="Script" path="res://OrangeCrystal.gd" id="6_1dqll"]
+[ext_resource type="Script" path="res://PlayerTrajectory.gd" id="6_1dqll"]
 [ext_resource type="Script" path="res://OrangePlayer.gd" id="6_jfvrh"]
 [ext_resource type="Script" path="res://GreenOrb.gd" id="6_xhsht"]
 [ext_resource type="Texture2D" uid="uid://bxe7wmvwud8nl" path="res://Orange.png" id="7_16s5a"]
@@ -15,6 +15,31 @@
 [ext_resource type="Script" path="res://SkullSprite.gd" id="11_klmc8"]
 [ext_resource type="Texture2D" uid="uid://dxdso6tdiudxp" path="res://Ribs.png" id="13_kdmih"]
 [ext_resource type="Script" path="res://Ribs.gd" id="14_rk11g"]
+[ext_resource type="Script" path="res://RibSprite1.gd" id="15_bit5d"]
+[ext_resource type="Script" path="res://RibSprite2.gd" id="16_epvtt"]
+[ext_resource type="Script" path="res://RibSprite3.gd" id="17_hph10"]
+[ext_resource type="Script" path="res://RibSprite4.gd" id="18_4vmpr"]
+[ext_resource type="Script" path="res://RibSprite5.gd" id="19_au3eh"]
+[ext_resource type="Script" path="res://RibSprite6.gd" id="20_v6nm1"]
+[ext_resource type="Script" path="res://RibSprite7.gd" id="21_pigw0"]
+[ext_resource type="Script" path="res://RibSprite8.gd" id="22_ldl3l"]
+[ext_resource type="Script" path="res://RibSprite9.gd" id="23_qxn4l"]
+[ext_resource type="Script" path="res://RibSprite10.gd" id="24_jn3b8"]
+[ext_resource type="Script" path="res://RibSprite11.gd" id="25_xnipf"]
+[ext_resource type="Script" path="res://RibSprite12.gd" id="26_r7yns"]
+[ext_resource type="Script" path="res://RibSprite13.gd" id="27_h1i7p"]
+[ext_resource type="Script" path="res://RibSprite14.gd" id="28_5muvm"]
+[ext_resource type="Script" path="res://RibSprite15.gd" id="29_51mbl"]
+[ext_resource type="Script" path="res://RibSprite16.gd" id="30_ws606"]
+[ext_resource type="Script" path="res://RibSprite17.gd" id="31_mmx0f"]
+[ext_resource type="Script" path="res://RibSprite18.gd" id="32_gkqku"]
+[ext_resource type="Script" path="res://RibSprite19.gd" id="33_ybtkg"]
+[ext_resource type="Script" path="res://RibSprite20.gd" id="34_luj2v"]
+[ext_resource type="Script" path="res://RibSprite21.gd" id="35_5ucq1"]
+[ext_resource type="Script" path="res://RibSprite22.gd" id="36_ltqvx"]
+[ext_resource type="Script" path="res://RibSprite23.gd" id="37_yye2m"]
+[ext_resource type="Script" path="res://RibSprite24.gd" id="38_reycx"]
+[ext_resource type="Script" path="res://RibSprite25.gd" id="39_vtnir"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cblo6"]
 texture = ExtResource("1_t5d4b")
@@ -817,8 +842,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1"]
+[node name="RibSprite1" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("15_bit5d")
 
 [node name="Ribs2" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1"]
 position = Vector2(-76, -233)
@@ -828,8 +854,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2"]
+[node name="RibSprite2" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("16_epvtt")
 
 [node name="Ribs3" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2"]
 position = Vector2(-76, -233)
@@ -839,8 +866,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3"]
+[node name="RibSprite3" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("17_hph10")
 
 [node name="Rib4" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3"]
 position = Vector2(-76, -233)
@@ -850,8 +878,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4"]
+[node name="RibSprite4" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("18_4vmpr")
 
 [node name="Ribs5" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4"]
 position = Vector2(-76, -233)
@@ -861,8 +890,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5"]
+[node name="RibSprite5" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("19_au3eh")
 
 [node name="Ribs6" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5"]
 position = Vector2(-76, -233)
@@ -872,8 +902,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6"]
+[node name="RibSprite6" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("20_v6nm1")
 
 [node name="Ribs7" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6"]
 position = Vector2(-76, -233)
@@ -883,8 +914,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7"]
+[node name="RibSprite7" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("21_pigw0")
 
 [node name="Ribs8" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7"]
 position = Vector2(-76, -233)
@@ -894,8 +926,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8"]
+[node name="RibSprite8" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("22_ldl3l")
 
 [node name="Ribs9" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8"]
 position = Vector2(-76, -233)
@@ -905,8 +938,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9"]
+[node name="RibSprite9" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("23_qxn4l")
 
 [node name="Ribs10" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9"]
 position = Vector2(-76, -233)
@@ -916,8 +950,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10"]
+[node name="RibSprite10" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("24_jn3b8")
 
 [node name="Ribs11" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10"]
 position = Vector2(-76, -233)
@@ -927,8 +962,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11"]
+[node name="RibSprite11" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("25_xnipf")
 
 [node name="Ribs12" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11"]
 position = Vector2(-76, -233)
@@ -938,8 +974,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12"]
+[node name="RibSprite12" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("26_r7yns")
 
 [node name="Ribs13" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12"]
 position = Vector2(-76, -233)
@@ -949,8 +986,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13"]
+[node name="RibSprite13" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("27_h1i7p")
 
 [node name="Ribs14" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13"]
 position = Vector2(-76, -233)
@@ -960,8 +998,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14"]
+[node name="RibSprite14" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("28_5muvm")
 
 [node name="Ribs15" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14"]
 position = Vector2(-76, -233)
@@ -971,8 +1010,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15"]
+[node name="RibSprite15" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("29_51mbl")
 
 [node name="Ribs16" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15"]
 position = Vector2(-76, -233)
@@ -982,8 +1022,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16"]
+[node name="RibSprite16" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("30_ws606")
 
 [node name="Ribs17" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16"]
 position = Vector2(-76, -233)
@@ -993,8 +1034,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17"]
+[node name="RibSprite17" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("31_mmx0f")
 
 [node name="Ribs18" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17"]
 position = Vector2(-76, -233)
@@ -1004,8 +1046,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18"]
+[node name="RibSprite18" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("32_gkqku")
 
 [node name="Ribs19" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18"]
 position = Vector2(-76, -233)
@@ -1015,8 +1058,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19"]
+[node name="RibSprite19" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("33_ybtkg")
 
 [node name="Ribs20" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19"]
 position = Vector2(-76, -233)
@@ -1026,8 +1070,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20"]
+[node name="RibSprite20" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("34_luj2v")
 
 [node name="Ribs21" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20"]
 position = Vector2(-76, -233)
@@ -1037,8 +1082,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21"]
+[node name="RibSprite21" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("35_5ucq1")
 
 [node name="Ribs22" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21"]
 position = Vector2(-76, -233)
@@ -1048,8 +1094,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22"]
+[node name="RibSprite22" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("36_ltqvx")
 
 [node name="Ribs23" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22"]
 position = Vector2(-76, -233)
@@ -1059,8 +1106,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23"]
+[node name="RibSprite23" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("37_yye2m")
 
 [node name="Ribs24" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23"]
 position = Vector2(-76, -233)
@@ -1070,8 +1118,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23/Ribs24"]
+[node name="RibSprite24" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23/Ribs24"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("38_reycx")
 
 [node name="Ribs25" type="AnimatableBody2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23/Ribs24"]
 position = Vector2(-76, -233)
@@ -1081,8 +1130,9 @@ script = ExtResource("14_rk11g")
 shape = SubResource("CircleShape2D_bhow4")
 disabled = true
 
-[node name="RibSprite" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23/Ribs24/Ribs25"]
+[node name="RibSprite25" type="Sprite2D" parent="PlayerHitbox/PlayerSkull/Ribs1/Ribs2/Ribs3/Rib4/Ribs5/Ribs6/Ribs7/Ribs8/Ribs9/Ribs10/Ribs11/Ribs12/Ribs13/Ribs14/Ribs15/Ribs16/Ribs17/Ribs18/Ribs19/Ribs20/Ribs21/Ribs22/Ribs23/Ribs24/Ribs25"]
 texture = ExtResource("13_kdmih")
+script = ExtResource("39_vtnir")
 
 [node name="Camera2D" type="Camera2D" parent="PlayerHitbox"]
 
